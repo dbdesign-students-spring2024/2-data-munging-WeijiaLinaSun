@@ -26,7 +26,7 @@ def munge():
     
     for i, e in enumerate(data):
         
-        data[i] = re.sub(r'\s+', ',', e)
+        data[i] = (',').join(e.split())
         data[i] = data[i].replace('****', '0').replace('***', '0')
         data[i] = data[i].split(',')[:-2]
 
