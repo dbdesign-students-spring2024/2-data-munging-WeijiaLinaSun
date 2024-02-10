@@ -1,5 +1,4 @@
 # Place code below to do the munging part of this assignment.
-import re
 
 def munge():
     # You must write the code using plain Python.
@@ -48,12 +47,6 @@ def munge():
     with open('data/clean_data.csv', 'w') as f:
         for e in data:
             f.write(','.join(e) + '\n') 
-
-
-
-
-
-
 
 
 munge()

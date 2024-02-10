@@ -43,8 +43,4 @@ def analyze():
             print(f'{1880 + count} to {1880 +len(average_temperature)-1 }: {format(m, ".1f")}')
 
 
-
-
-
-
 analyze()
