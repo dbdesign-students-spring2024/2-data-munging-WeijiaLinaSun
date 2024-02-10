@@ -1,7 +1,7 @@
 # Place code below to do the munging part of this assignment.
 import re
 
-def ana():
+def munge():
     # You must write the code using plain Python.
     # Issues your program must address:
     # read the data directly from the file 66/data/GLB.Ts+dSST.txt
@@ -56,4 +56,4 @@ def ana():
 
 
 
-ana()
+munge()

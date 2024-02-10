@@ -1,7 +1,7 @@
 
 import csv
 
-def an():
+def analyze():
 
     # opens up your cleaned up data file, data/clean_data.csv and imports it using Python's csv module.
     # outputs the average temperature anomaly in degrees Farenheit for each decade since 1880.
@@ -47,4 +47,4 @@ def an():
 
 
 
-an()
+analyze()
