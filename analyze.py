@@ -1,5 +1,6 @@
 
 import csv
+import os
 
 def analyze():
 
@@ -11,11 +12,12 @@ def analyze():
     # 1900 to 1909
     # ...and so on.
     average_temperature = []
-    with open('data/clean_data.csv') as file:
-       
+    platform_agnostic_file_path = os.path.join('data', 'clean_data.csv')
+    with open(platform_agnostic_file_path) as file:
+     
         csv_reader = csv.reader(file)
         next(csv_reader)
-        
+       
         for row in csv_reader:
             t = 0
             for i in range(1,13):
@@ -41,6 +43,5 @@ def analyze():
             m /= (len(average_temperature) - count)
 
             print(f'{1880 + count} to {1880 +len(average_temperature)-1 }: {format(m, ".1f")}')
-
 
 analyze()
