@@ -14,10 +14,8 @@ def analyze():
     average_temperature = []
     platform_agnostic_file_path = os.path.join('data', 'clean_data.csv')
     with open(platform_agnostic_file_path) as file:
-     
         csv_reader = csv.reader(file)
         next(csv_reader)
-       
         for row in csv_reader:
             t = 0
             for i in range(1,13):
